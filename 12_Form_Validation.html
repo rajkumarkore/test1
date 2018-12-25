@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="12_styles.css">
+</head>
+<body>
+
+<div id="form-div">
+    <h3>Register Here</h3>
+    <form onsubmit="return validate()" action="" name="vform">
+        <div id="Firstname_div">
+           <input type="text" id="Firstname" name="Firstname" class="textInput" placeholder="First Name">
+            <div id="name_error"></div>
+        </div>
+
+        <div id="Middlename_div">
+           <input type="text" id="Middlename" name="Middlename" class="textInput" placeholder="Middle Name">
+            <div id="name_error"></div>
+        </div>
+
+         <div id="Lastname_div">
+           <input type="text" id="Lastname" name="Lastname" class="textInput" placeholder="Last Name">
+            <div id="name_error"></div>
+        </div>
+
+         <div id="Mobilenumber_div">
+           <input type="text" id="Mobilenumber" name="Mobilenumber" class="textInput" placeholder="Mobile Number">
+            <div id="name_error"></div>
+        </div>
+
+        <div id="email_div">
+            <input type="email" id="email" name="email" class="textInput" placeholder="Email">
+            <div id="email_error"></div>
+        </div>
+        
+        <div id="password_div">
+            <input type="password" id="password" name="password" class="textInput" placeholder="Password">
+        </div>
+        <div id="pass_confirm_div">
+            <input type="password" id="password_confirm" name="password_confirm" class="textInput" placeholder="Confirm Password">
+            <div id="password_error"></div>
+        </div>
+        <div>
+            <input type="submit" name="register" value="Register" class="btn">
+        </div>
+    </form>
+</div>
+
+<script src="12_script.js"></script>
+</body>
+</html>
